@@ -1,0 +1,56 @@
+elabore um enunciado, um readme e um gitignore do projeto acima
+
+O ChatGPT disse:
+ChatGPT
+Enunciado do Projeto
+Sistema de Registro de Alunos e Notas
+Você foi contratado para desenvolver um sistema de banco de dados para gerenciar o registro de alunos, cursos e suas respectivas notas em uma instituição de ensino. O objetivo é criar um banco de dados relacional utilizando SQL para realizar operações básicas de inserção, consulta, atualização e exclusão de dados. O sistema deve armazenar informações dos alunos, cursos oferecidos e suas notas.
+
+Funcionalidades do Sistema:
+Criar um banco de dados chamado Escola.
+Criar as seguintes tabelas:
+Alunos: Armazena dados sobre os alunos, incluindo nome, data de nascimento e endereço.
+Cursos: Armazena os cursos oferecidos pela instituição, com nome e descrição.
+Notas: Armazena as notas dos alunos associadas a seus respectivos cursos.
+Inserir alunos, cursos e notas no banco de dados.
+Consultar as notas dos alunos em cada curso, calcular a média das notas e encontrar a maior nota em cada curso.
+Atualizar as notas de um aluno em um curso e modificar o endereço de um aluno.
+Excluir registros de alunos e cursos, junto com suas respectivas notas.
+Tecnologias:
+MySQL ou outro sistema de gerenciamento de banco de dados relacional (RDBMS).
+SQL para criação e manipulação das tabelas e dados.
+README do Projeto
+Sistema de Registro de Alunos e Notas
+Descrição
+Este projeto consiste em um sistema de gerenciamento de registro de alunos, cursos e suas notas em uma instituição de ensino. Utilizamos SQL para criar o banco de dados, realizar operações CRUD (Create, Read, Update, Delete) e trabalhar com relacionamentos entre as tabelas.
+
+Funcionalidades
+Criação do Banco de Dados: O banco de dados Escola contém três tabelas principais: Alunos, Cursos e Notas.
+Inserção de Dados: Possibilidade de adicionar novos alunos, cursos e registrar notas.
+Consultas: Visualizar alunos e suas notas em cada curso, calcular a média das notas de cada curso e encontrar a maior nota.
+Atualização de Dados: Atualizar a nota de um aluno ou modificar seu endereço.
+Exclusão de Dados: Excluir alunos e cursos, garantindo a exclusão automática de notas associadas através de ON DELETE CASCADE.
+Estrutura do Banco de Dados
+O sistema é composto por três tabelas principais:
+
+Alunos: Armazena o nome, data de nascimento e endereço de cada aluno.
+Cursos: Armazena o nome e a descrição dos cursos oferecidos.
+Notas: Armazena as notas de cada aluno em cada curso, utilizando chaves estrangeiras para relacionar alunos e cursos.
+Tabelas
+Alunos:
+
+id_aluno: Identificador único do aluno (chave primária).
+nome: Nome do aluno.
+data_nascimento: Data de nascimento do aluno.
+endereco: Endereço do aluno.
+Cursos:
+
+id_curso: Identificador único do curso (chave primária).
+nome_curso: Nome do curso.
+descricao: Descrição do curso.
+Notas:
+
+id_nota: Identificador único da nota (chave primária).
+id_aluno: Identificador do aluno (chave estrangeira).
+id_curso: Identificador do curso (chave estrangeira).
+nota: Nota do aluno no curso.
