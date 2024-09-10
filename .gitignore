@@ -1,0 +1,16 @@
+# Arquivos temporários e logs
+*.log
+*.tmp
+*.bak
+
+# Arquivos de banco de dados local
+*.sql
+
+# Configurações do ambiente local
+.env
+.vscode/
+
+# Pastas de build e cache
+/build/
+.cache/
+node_modules/
